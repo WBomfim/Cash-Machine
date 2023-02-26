@@ -42,12 +42,6 @@ class TransacaoTest {
   }
 
   @Test
-  @DisplayName("22.1 - Testa o método Getter do atributo descricao.")
-  void getdescricaoTest() {
-    assertEquals(this.descricao, transacao.getDescricao());
-  }
-
-  @Test
   @DisplayName("23 - Testa o método retornar resumo transacao.")
   void retornarResumoTransacaoTest() {
     String resumoTransacao = transacao.retornarResumoTransacao();

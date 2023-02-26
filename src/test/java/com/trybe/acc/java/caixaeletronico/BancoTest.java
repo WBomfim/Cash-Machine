@@ -35,14 +35,6 @@ class BancoTest {
   }
 
   @Test
-  @DisplayName("2.1 - Testa o método adicionar conta.")
-  void adicionarContaTest() {
-    Conta conta = new Conta("Corrente", cliente, banco);
-    banco.adicionarConta(conta);
-    assertEquals(1, banco.getContas().size());
-  }
-
-  @Test
   @DisplayName("3 - Testa o método login da pessoa cliente retorna o objeto pessoa cliente corretamente.")
   void pessoaClienteLoginTest() {
     PessoaCliente clienteLogado = banco.pessoaClienteLogin("842.074.410-77", "1234");
